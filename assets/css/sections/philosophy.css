@@ -1,0 +1,173 @@
+/* ══════════════════════════════════════════════════════════════
+   SECTION: PHILOSOPHY
+   ══════════════════════════════════════════════════════════════ */
+
+/* ── Intro heading ──────────────────────────────────────────── */
+
+#philosophy h2 {
+  margin-bottom: var(--space-16);
+}
+
+/* ── Philosophy block ───────────────────────────────────────── */
+
+.philosophy__block {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: clamp(32px, 4vw, 64px);
+  align-items: start;
+}
+
+/* ── Block header (left column) ────────────────────────────── */
+
+.philosophy__block-header {
+  position: sticky;
+  top: calc(var(--nav-height) + var(--space-8));
+}
+
+.philosophy__block-num {
+  display: block;
+  font-family: var(--font-display);
+  font-size: clamp(48px, 6vw, 80px);
+  color: var(--color-accent-dim);
+  letter-spacing: var(--tracking-wide);
+  line-height: 1;
+  margin-bottom: var(--space-3);
+  border: none;
+  /* Outlined number effect */
+  -webkit-text-stroke: 1px var(--color-accent-border);
+  color: transparent;
+}
+
+.philosophy__block-header h3 {
+  font-family: var(--font-heading);
+  font-size: var(--text-h3);
+  font-weight: 700;
+  color: var(--color-text-primary);
+}
+
+/* ── Block body (right column) ──────────────────────────────── */
+
+.philosophy__block-body {
+  padding-top: var(--space-3);
+}
+
+.philosophy__block-body .body-lg {
+  margin-bottom: var(--space-8);
+  color: var(--color-text-secondary);
+}
+
+/* ── Style tags ─────────────────────────────────────────────── */
+
+.philosophy__style-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+}
+
+/* ── Principles list ────────────────────────────────────────── */
+
+.philosophy__principles {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  counter-reset: principles;
+}
+
+.philosophy__principles li {
+  counter-increment: principles;
+  display: flex;
+  align-items: center;
+  gap: var(--space-6);
+  padding: var(--space-5) 0;
+  border-bottom: 1px solid var(--color-divider);
+  font-family: var(--font-heading);
+  font-size: var(--text-body-lg);
+  font-weight: 500;
+  color: var(--color-text-secondary);
+  transition: color var(--transition-base), padding-left var(--transition-base);
+}
+
+.philosophy__principles li::before {
+  content: "0" counter(principles);
+  font-family: var(--font-display);
+  font-size: var(--text-caption);
+  letter-spacing: var(--tracking-wider);
+  color: var(--color-accent);
+  flex-shrink: 0;
+  min-width: 24px;
+}
+
+.philosophy__principles li:first-child {
+  border-top: 1px solid var(--color-divider);
+}
+
+.philosophy__principles li:hover {
+  color: var(--color-text-primary);
+  padding-left: var(--space-3);
+}
+
+/* ── Methodology grid ───────────────────────────────────────── */
+
+.method-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-5);
+}
+
+.method-card {
+  padding: var(--space-8);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.method-card__icon {
+  width: 48px;
+  height: 48px;
+  border-radius: var(--radius-sm);
+  background: var(--color-accent-dim);
+  border: 1px solid var(--color-accent-border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-accent);
+  margin-bottom: var(--space-2);
+}
+
+.method-card h4 {
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: var(--tracking-wide);
+  text-transform: uppercase;
+  color: var(--color-text-primary);
+  margin: 0;
+}
+
+.method-card p {
+  font-size: 14px;
+  color: var(--color-text-secondary);
+  line-height: var(--leading-relaxed);
+  margin: 0;
+}
+
+/* ── Responsive ─────────────────────────────────────────────── */
+
+@media (max-width: 1024px) {
+  .philosophy__block {
+    grid-template-columns: 1fr;
+  }
+
+  .philosophy__block-header {
+    position: static;
+  }
+}
+
+@media (max-width: 768px) {
+  .method-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .philosophy__principles li {
+    font-size: var(--text-body);
+  }
+}

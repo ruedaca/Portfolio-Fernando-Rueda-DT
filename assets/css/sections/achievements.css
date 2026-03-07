@@ -1,0 +1,148 @@
+/* ══════════════════════════════════════════════════════════════
+   SECTION: ACHIEVEMENTS
+   ══════════════════════════════════════════════════════════════ */
+
+/* ── Achievements grid ──────────────────────────────────────── */
+
+.achievements-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-5);
+  margin-top: var(--space-12);
+  margin-bottom: var(--space-16);
+}
+
+/* ── Achievement card ───────────────────────────────────────── */
+
+.achievement-card {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  padding: var(--space-8);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Gold accent top border */
+.achievement-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(to right, var(--color-accent), transparent);
+  opacity: 0;
+  transition: opacity var(--transition-base);
+}
+
+.achievement-card:hover::before {
+  opacity: 1;
+}
+
+/* Large number */
+.achievement-card__num {
+  font-family: var(--font-display);
+  font-size: clamp(48px, 5vw, 72px);
+  color: var(--color-accent);
+  letter-spacing: var(--tracking-wide);
+  line-height: 1;
+}
+
+.achievement-card__num small {
+  font-size: 0.5em;
+  vertical-align: super;
+}
+
+/* Icon variant */
+.achievement-card__icon {
+  color: var(--color-accent);
+  opacity: 0.6;
+  transition: opacity var(--transition-base);
+  margin-bottom: var(--space-2);
+}
+
+.achievement-card:hover .achievement-card__icon {
+  opacity: 1;
+}
+
+.achievement-card h4 {
+  font-size: var(--text-body-lg);
+  font-weight: 600;
+  letter-spacing: 0;
+  text-transform: none;
+  color: var(--color-text-primary);
+  margin: 0;
+}
+
+.achievement-card p {
+  font-size: var(--text-body);
+  color: var(--color-text-secondary);
+  line-height: var(--leading-relaxed);
+  flex: 1;
+  margin: 0;
+}
+
+.achievement-card .tag {
+  align-self: flex-start;
+  margin-top: auto;
+}
+
+/* ── Stats ticker ───────────────────────────────────────────── */
+
+.ticker-wrap {
+  overflow: hidden;
+  border-top: 1px solid var(--color-divider);
+  border-bottom: 1px solid var(--color-divider);
+  padding-block: var(--space-5);
+  background: var(--color-bg-secondary);
+}
+
+.ticker-track {
+  display: flex;
+  align-items: center;
+  gap: var(--space-8);
+  white-space: nowrap;
+  animation: ticker 28s linear infinite;
+}
+
+.ticker-wrap:hover .ticker-track {
+  animation-play-state: paused;
+}
+
+.ticker-item {
+  font-family: var(--font-display);
+  font-size: clamp(18px, 2.5vw, 26px);
+  letter-spacing: var(--tracking-wide);
+  color: var(--color-text-muted);
+  text-transform: uppercase;
+  flex-shrink: 0;
+}
+
+.ticker-item em {
+  font-style: normal;
+  color: var(--color-text-muted);
+  font-size: 0.7em;
+  letter-spacing: var(--tracking-wider);
+  margin-left: var(--space-2);
+}
+
+.ticker-sep {
+  color: var(--color-accent);
+  font-size: 10px;
+  flex-shrink: 0;
+}
+
+/* ── Responsive ─────────────────────────────────────────────── */
+
+@media (max-width: 1024px) {
+  .achievements-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .achievements-grid {
+    grid-template-columns: 1fr;
+  }
+}

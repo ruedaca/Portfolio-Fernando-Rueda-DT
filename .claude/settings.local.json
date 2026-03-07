@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(dir:*)",
+      "Bash(findstr:*)",
+      "Bash(cmd /c \"dir /s /b \"\"C:\\\\Users\\\\Camu\\\\Desktop\\\\PROYECTOS\\\\Portfolio - Fernando Rueda\"\"\")",
+      "Bash(cmd /c dir /s /b \"C:\\\\Users\\\\Camu\\\\Desktop\\\\PROYECTOS\\\\Portfolio - Fernando Rueda\")",
+      "Bash(powershell -Command:*)",
+      "Bash(cmd /c \"dir \"C:UsersCamuDesktopPROYECTOSPortfolio - Fernando Ruedaassetsimageshero-bg-2.png\"\")",
+      "Bash(cmd /c dir:*)",
+      "Bash(wsl ls:*)",
+      "Bash(wsl stat:*)",
+      "Bash(wsl du:*)"
+    ]
+  }
+}

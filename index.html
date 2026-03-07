@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+<html lang="es" data-lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Fernando Rueda — Director Técnico y Entrenador de Fútbol. Liderazgo, visión táctica y experiencia en el fútbol profesional.">
+  <meta property="og:title" content="Fernando Rueda · Director Técnico">
+  <meta property="og:description" content="Liderazgo, visión táctica y experiencia en el fútbol profesional.">
+  <meta property="og:type" content="website">
+  <title>Fernando Rueda · Director Técnico</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="assets/css/reset.css">
+  <link rel="stylesheet" href="assets/css/variables.css">
+  <link rel="stylesheet" href="assets/css/typography.css">
+  <link rel="stylesheet" href="assets/css/layout.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+  <link rel="stylesheet" href="assets/css/animations.css">
+  <link rel="stylesheet" href="assets/css/sections/hero.css">
+  <link rel="stylesheet" href="assets/css/sections/about.css">
+  <link rel="stylesheet" href="assets/css/sections/career.css">
+  <link rel="stylesheet" href="assets/css/sections/philosophy.css">
+  <link rel="stylesheet" href="assets/css/sections/achievements.css">
+  <link rel="stylesheet" href="assets/css/sections/staff.css">
+  <link rel="stylesheet" href="assets/css/sections/media.css">
+  <link rel="stylesheet" href="assets/css/sections/contact.css">
+</head>
+
+<body>
+
+  <!-- ═══════════════════════════════════════════════════════════
+       SECTION 1: HERO
+  ═══════════════════════════════════════════════════════════ -->
+  <section id="hero">
+    <!-- Carrusel de fondo con fade -->
+    <div class="hero__slideshow" id="hero-slideshow" aria-hidden="true">
+      <div class="hero__slide hero__slide--active" style="background-image: url('assets/images/hero-bg.jpg')"></div>
+      <div class="hero__slide" style="background-image: url('assets/images/hero-bg-2.jpg')"></div>
+      <div class="hero__slide" style="background-image: url('assets/images/hero-bg-3.jpg')"></div>
+    </div>
+    <div class="hero__overlay" aria-hidden="true"></div>
+
+    <!-- ─── NAVIGATION ─── -->
+    <nav id="main-nav" role="navigation" aria-label="Navegación principal">
+      <div class="nav__inner container--wide">
+        <!-- Logo -->
+        <a href="#hero" class="nav__logo" aria-label="Inicio">
+          <span class="nav__logo-text">FR</span>
+          <span class="nav__logo-diamond" aria-hidden="true">◆</span>
+        </a>
+
+        <!-- Desktop nav links -->
+        <ul class="nav__links" role="list">
+          <li><a href="#about" class="nav-link" data-i18n="nav.about">Perfil</a></li>
+          <li><a href="#career" class="nav-link" data-i18n="nav.career">Trayectoria</a></li>
+          <li><a href="#philosophy" class="nav-link" data-i18n="nav.philosophy">Filosofía</a></li>
+          <li><a href="#achievements" class="nav-link" data-i18n="nav.achievements">Logros</a></li>
+          <li><a href="#staff" class="nav-link" data-i18n="nav.gallery">Galería</a></li>
+          <li><a href="#media" class="nav-link" data-i18n="nav.media">Prensa</a></li>
+          <li><a href="#contact" class="nav-link" data-i18n="nav.contact">Contacto</a></li>
+        </ul>
+
+        <!-- Language switcher + hamburger -->
+        <div class="nav__controls">
+          <button class="lang-btn" id="lang-btn" aria-label="Cambiar idioma">
+            <span class="lang-btn__current">ES</span>
+            <span class="lang-btn__sep">|</span>
+            <span class="lang-btn__other">EN</span>
+          </button>
+          <button class="hamburger" id="menu-btn" aria-label="Abrir menú" aria-expanded="false" aria-controls="mobile-menu">
+            <span class="hamburger__bar"></span>
+            <span class="hamburger__bar"></span>
+            <span class="hamburger__bar"></span>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Mobile menu overlay -->
+    <div id="mobile-menu" class="mobile-menu" role="dialog" aria-modal="true" aria-label="Menú móvil">
+      <button class="mobile-menu__close" id="menu-close" aria-label="Cerrar menú">✕</button>
+      <ul class="mobile-menu__links" role="list">
+        <li><a href="#about" class="mobile-link" data-i18n="nav.about">Perfil</a></li>
+        <li><a href="#career" class="mobile-link" data-i18n="nav.career">Trayectoria</a></li>
+        <li><a href="#philosophy" class="mobile-link" data-i18n="nav.philosophy">Filosofía</a></li>
+        <li><a href="#achievements" class="mobile-link" data-i18n="nav.achievements">Logros</a></li>
+        <li><a href="#staff" class="mobile-link" data-i18n="nav.gallery">Galería</a></li>
+        <li><a href="#media" class="mobile-link" data-i18n="nav.media">Prensa</a></li>
+        <li><a href="#contact" class="mobile-link" data-i18n="nav.contact">Contacto</a></li>
+      </ul>
+    </div>
+
+    <!-- Hero content -->
+    <div class="hero__content container--wide">
+      <span class="hero__eyebrow hero-animate-1" data-i18n="hero.eyebrow">Director Técnico · Licencia UEFA Pro</span>
+      <h1 class="hero__name hero-animate-2">
+        <span data-i18n="hero.firstName">Fernando</span><br>
+        <span data-i18n="hero.lastName">Rueda</span>
+      </h1>
+      <p class="hero__tagline hero-animate-3" data-i18n="hero.tagline">
+        "El fútbol se gana con orden, talento e identidad"
+      </p>
+      <div class="hero__actions hero-animate-3">
+        <a href="#contact" class="btn-primary" data-i18n="hero.cta1">Trabajar Juntos</a>
+        <a href="#career" class="btn-secondary" data-i18n="hero.cta2">Ver Trayectoria</a>
+      </div>
+    </div>
+
+    <!-- Scroll indicator -->
+    <div class="hero__scroll scroll-indicator" aria-hidden="true">
+      <svg width="24" height="36" viewBox="0 0 24 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect x="1" y="1" width="22" height="34" rx="11" stroke="currentColor" stroke-width="1.5"/>
+        <rect x="10" y="8" width="4" height="8" rx="2" fill="currentColor"/>
+      </svg>
+    </div>
+  </section>
+
+  <main>
+
+    <!-- ═══════════════════════════════════════════════════════════
+         SECTION 2: ABOUT / PROFILE
+    ═══════════════════════════════════════════════════════════ -->
+    <section id="about" class="section section--alt">
+      <div class="container">
+        <div class="about__grid">
+          <!-- Text column -->
+          <div class="about__text">
+            <span class="section-eyebrow reveal" data-i18n="about.eyebrow">Perfil</span>
+            <h2 class="reveal reveal-delay-1" data-i18n="about.h2">Una carrera construida<br>sobre convicciones</h2>
+            <p class="body-lg reveal reveal-delay-2" data-i18n="about.bio1">
+              Fernando Rueda es un director técnico con más de diez años de experiencia en el fútbol profesional, habiendo dirigido clubes en distintas categorías del fútbol español e internacional. Su modelo de juego combina presión alta, dominio del balón y una identidad colectiva fuerte.
+            </p>
+            <p class="reveal reveal-delay-3" data-i18n="about.bio2">
+              Formado con Licencia UEFA Pro, Rueda ha desarrollado una metodología propia que integra el análisis de datos, la psicología del rendimiento y la gestión del vestuario como pilares de su trabajo diario. Cada proyecto es una oportunidad para dejar huella táctica y humana.
+            </p>
+            <p class="reveal reveal-delay-4" data-i18n="about.bio3">
+              Su filosofía parte de una premisa clara: el colectivo supera al individuo, y la identidad del equipo es el activo más valioso que un entrenador puede construir.
+            </p>
+
+            <!-- Values -->
+            <div class="about__values">
+              <div class="value-tile reveal reveal-delay-1">
+                <span class="value-tile__num">01</span>
+                <svg class="value-tile__icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"/></svg>
+                <span data-i18n="about.value1">Visión Táctica</span>
+              </div>
+              <div class="value-tile reveal reveal-delay-2">
+                <span class="value-tile__num">02</span>
+                <svg class="value-tile__icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                <span data-i18n="about.value2">Liderazgo</span>
+              </div>
+              <div class="value-tile reveal reveal-delay-3">
+                <span class="value-tile__num">03</span>
+                <svg class="value-tile__icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+                <span data-i18n="about.value3">Identidad de Juego</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Photo column -->
+          <div class="about__photo-wrap reveal-right">
+            <div class="about__photo-frame">
+              <img src="assets/images/about-photo.jpg" alt="Fernando Rueda" class="about__photo">
+              <div class="about__photo-corner" aria-hidden="true"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════════
+         SECTION 3: CAREER / TRAJECTORY
+    ═══════════════════════════════════════════════════════════ -->
+    <section id="career" class="section">
+      <div class="container">
+        <span class="section-eyebrow reveal" data-i18n="career.eyebrow">Trayectoria</span>
+        <h2 class="reveal reveal-delay-1" data-i18n="career.h2">Una carrera<br>en el más alto nivel</h2>
+
+        <!-- Desktop: horizontal timeline -->
+        <div class="timeline-track" role="list" aria-label="Timeline de carrera">
+          <button class="timeline-node timeline-node--active" data-club-id="club-1" role="listitem" aria-pressed="true">
+            <div class="timeline-node__badge">CA</div>
+            <span class="timeline-node__years">2018–2020</span>
+            <span class="timeline-node__name">Club A</span>
+            <span class="timeline-node__role" data-i18n="career.role1">Entrenador Principal</span>
+          </button>
+          <div class="timeline-connector" aria-hidden="true"></div>
+          <button class="timeline-node" data-club-id="club-2" role="listitem" aria-pressed="false">
+            <div class="timeline-node__badge">FB</div>
+            <span class="timeline-node__years">2020–2022</span>
+            <span class="timeline-node__name">FC Bravo</span>
+            <span class="timeline-node__role" data-i18n="career.role2">Director Técnico</span>
+          </button>
+          <div class="timeline-connector" aria-hidden="true"></div>
+          <button class="timeline-node" data-club-id="club-3" role="listitem" aria-pressed="false">
+            <div class="timeline-node__badge">EC</div>
+            <span class="timeline-node__years">2022–2024</span>
+            <span class="timeline-node__name">Equipo C</span>
+            <span class="timeline-node__role" data-i18n="career.role3">Director Técnico</span>
+          </button>
+          <div class="timeline-connector" aria-hidden="true"></div>
+          <button class="timeline-node" data-club-id="club-4" role="listitem" aria-pressed="false">
+            <div class="timeline-node__badge">DP</div>
+            <span class="timeline-node__years">2024–Hoy</span>
+            <span class="timeline-node__name">Deportivo P</span>
+            <span class="timeline-node__role" data-i18n="career.role4">Director Técnico</span>
+          </button>
+        </div>
+
+        <!-- Detail panel (JS-driven) -->
+        <div id="timeline-detail" class="timeline-detail-panel reveal reveal-delay-2" aria-live="polite"></div>
+
+        <!-- Hidden data templates -->
+        <div class="timeline-data" aria-hidden="true">
+
+          <template data-club-id="club-1">
+            <div class="career-detail__header">
+              <div class="career-detail__club-info">
+                <div class="career-detail__badge">CA</div>
+                <div>
+                  <h3>Club A</h3>
+                  <div class="career-detail__tags">
+                    <span class="tag">2018 – 2020</span>
+                    <span class="tag" data-i18n="career.role1">Entrenador Principal</span>
+                    <span class="tag" data-i18n="career.div2">2ª División</span>
+                  </div>
+                </div>
+              </div>
+              <p class="career-detail__achievement" data-i18n="career.ach1">
+                ★ Ascenso histórico a Segunda División · Temporada 2019–20
+              </p>
+            </div>
+            <div class="career-detail__stats">
+              <div class="stat-block">
+                <span class="stat-block__num">68%</span>
+                <span class="stat-block__label" data-i18n="stats.wins">Victorias</span>
+              </div>
+              <div class="stat-block">
+                <span class="stat-block__num">72</span>
+                <span class="stat-block__label" data-i18n="stats.matches">Partidos</span>
+              </div>
+              <div class="stat-block">
+                <span class="stat-block__num">2</span>
+                <span class="stat-block__label" data-i18n="stats.titles">Títulos</span>
+              </div>
+            </div>
+          </template>
+
+          <template data-club-id="club-2">
+            <div class="career-detail__header">
+              <div class="career-detail__club-info">
+                <div class="career-detail__badge">FB</div>
+                <div>
+                  <h3>FC Bravo</h3>
+                  <div class="career-detail__tags">
+                    <span class="tag">2020 – 2022</span>
+                    <span class="tag" data-i18n="career.role2">Director Técnico</span>
+                    <span class="tag" data-i18n="career.div1">1ª División</span>
+                  </div>
+                </div>
+              </div>
+              <p class="career-detail__achievement" data-i18n="career.ach2">
+                ★ Temporada histórica · Clasificación top 6 · Copa: Cuartos de Final
+              </p>
+            </div>
+            <div class="career-detail__stats">
+              <div class="stat-block">
+                <span class="stat-block__num">61%</span>
+                <span class="stat-block__label" data-i18n="stats.wins">Victorias</span>
+              </div>
+              <div class="stat-block">
+                <span class="stat-block__num">88</span>
+                <span class="stat-block__label" data-i18n="stats.matches">Partidos</span>
+              </div>
+              <div class="stat-block">
+                <span class="stat-block__num">6º</span>
+                <span class="stat-block__label" data-i18n="stats.position">Posición Final</span>
+              </div>
+            </div>
+          </template>
+
+          <template data-club-id="club-3">
+            <div class="career-detail__header">
+              <div class="career-detail__club-info">
+                <div class="career-detail__badge">EC</div>
+                <div>
+                  <h3>Equipo C</h3>
+                  <div class="career-detail__tags">
+                    <span class="tag">2022 – 2024</span>
+                    <span class="tag" data-i18n="career.role3">Director Técnico</span>
+                    <span class="tag" data-i18n="career.liga">Liga Profesional</span>
+                  </div>
+                </div>
+              </div>
+              <p class="career-detail__achievement" data-i18n="career.ach3">
+                ★ Semifinalista Copa Nacional · 3º en Liga Profesional 2022–23
+              </p>
+            </div>
+            <div class="career-detail__stats">
+              <div class="stat-block">
+                <span class="stat-block__num">65%</span>
+                <span class="stat-block__label" data-i18n="stats.wins">Victorias</span>
+              </div>
+              <div class="stat-block">
+                <span class="stat-block__num">96</span>
+                <span class="stat-block__label" data-i18n="stats.matches">Partidos</span>
+              </div>
+              <div class="stat-block">
+                <span class="stat-block__num">3º</span>
+                <span class="stat-block__label" data-i18n="stats.position">Posición Final</span>
+              </div>
+            </div>
+          </template>
+
+          <template data-club-id="club-4">
+            <div class="career-detail__header">
+              <div class="career-detail__club-info">
+                <div class="career-detail__badge">DP</div>
+                <div>
+                  <h3>Deportivo P</h3>
+                  <div class="career-detail__tags">
+                    <span class="tag">2024 – <span data-i18n="career.present">Presente</span></span>
+                    <span class="tag" data-i18n="career.role4">Director Técnico</span>
+                    <span class="tag" data-i18n="career.liga">Liga Profesional</span>
+                  </div>
+                </div>
+              </div>
+              <p class="career-detail__achievement" data-i18n="career.ach4">
+                ★ Proyecto actual en marcha · Liderazgo de temporada
+              </p>
+            </div>
+            <div class="career-detail__stats">
+              <div class="stat-block">
+                <span class="stat-block__num">70%</span>
+                <span class="stat-block__label" data-i18n="stats.wins">Victorias</span>
+              </div>
+              <div class="stat-block">
+                <span class="stat-block__num">38</span>
+                <span class="stat-block__label" data-i18n="stats.matches">Partidos</span>
+              </div>
+              <div class="stat-block">
+                <span class="stat-block__num">1º</span>
+                <span class="stat-block__label" data-i18n="stats.position">Posición Actual</span>
+              </div>
+            </div>
+          </template>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════════
+         SECTION 4: PHILOSOPHY
+    ═══════════════════════════════════════════════════════════ -->
+    <section id="philosophy" class="section section--alt">
+      <div class="container">
+        <span class="section-eyebrow reveal" data-i18n="philosophy.eyebrow">Filosofía</span>
+        <h2 class="reveal reveal-delay-1" data-i18n="philosophy.h2">Cómo entiendo<br>el fútbol</h2>
+
+        <!-- Block 01: Playing style -->
+        <div class="philosophy__block reveal">
+          <div class="philosophy__block-header">
+            <span class="philosophy__block-num">01</span>
+            <h3 data-i18n="philosophy.s1title">Estilo de Juego</h3>
+          </div>
+          <div class="philosophy__block-body">
+            <p class="body-lg" data-i18n="philosophy.s1text">
+              Fútbol vertical de alta presión. Construcción desde atrás con transiciones rápidas al ataque. El equipo presiona como unidad, defiende compacto y ataca con libertad posicional. La identidad no es negociable: se trabaja desde el primer día hasta el último.
+            </p>
+            <div class="philosophy__style-tags">
+              <span class="tag" data-i18n="philo.t1">Alta Presión</span>
+              <span class="tag" data-i18n="philo.t2">Juego Directo</span>
+              <span class="tag" data-i18n="philo.t3">Construcción Desde Atrás</span>
+              <span class="tag" data-i18n="philo.t4">Transiciones Rápidas</span>
+              <span class="tag" data-i18n="philo.t5">Identidad Colectiva</span>
+            </div>
+          </div>
+        </div>
+
+        <hr class="divider-rule">
+
+        <!-- Block 02: Dressing room -->
+        <div class="philosophy__block reveal">
+          <div class="philosophy__block-header">
+            <span class="philosophy__block-num">02</span>
+            <h3 data-i18n="philosophy.s2title">Gestión del Vestuario</h3>
+          </div>
+          <div class="philosophy__block-body">
+            <ol class="philosophy__principles">
+              <li data-i18n="philo.p1">Honestidad antes que comodidad</li>
+              <li data-i18n="philo.p2">El colectivo siempre por encima del individuo</li>
+              <li data-i18n="philo.p3">La confianza se gana, no se hereda</li>
+              <li data-i18n="philo.p4">Disciplina táctica con libertad creativa</li>
+              <li data-i18n="philo.p5">Análisis permanente, mejora constante</li>
+            </ol>
+          </div>
+        </div>
+
+        <hr class="divider-rule">
+
+        <!-- Block 03: Training methodology -->
+        <div class="philosophy__block reveal">
+          <div class="philosophy__block-header">
+            <span class="philosophy__block-num">03</span>
+            <h3 data-i18n="philosophy.s3title">Metodología de Entrenamiento</h3>
+          </div>
+          <div class="philosophy__block-body">
+            <div class="method-grid">
+              <div class="method-card card reveal-scale reveal-delay-1">
+                <div class="method-card__icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+                </div>
+                <h4 data-i18n="method.m1title">Análisis de Datos</h4>
+                <p data-i18n="method.m1text">Uso de estadísticas avanzadas y métricas de rendimiento para la toma de decisiones táctica y gestión del equipo.</p>
+              </div>
+              <div class="method-card card reveal-scale reveal-delay-2">
+                <div class="method-card__icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                </div>
+                <h4 data-i18n="method.m2title">Vídeo Táctica</h4>
+                <p data-i18n="method.m2text">Sesiones de vídeo individuales y colectivas para análisis propio y del rival. Herramienta central del proceso de mejora.</p>
+              </div>
+              <div class="method-card card reveal-scale reveal-delay-3">
+                <div class="method-card__icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                </div>
+                <h4 data-i18n="method.m3title">Trabajo en Bloque</h4>
+                <p data-i18n="method.m3text">Entrenamientos diseñados en torno al concepto colectivo. La repetición de automatismos es la base de la consistencia.</p>
+              </div>
+              <div class="method-card card reveal-scale reveal-delay-4">
+                <div class="method-card__icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+                </div>
+                <h4 data-i18n="method.m4title">Desarrollo Individual</h4>
+                <p data-i18n="method.m4text">Planes personalizados de mejora para cada jugador. El crecimiento individual está siempre al servicio del colectivo.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════════
+         SECTION 5: ACHIEVEMENTS
+    ═══════════════════════════════════════════════════════════ -->
+    <section id="achievements" class="section">
+      <div class="container">
+        <span class="section-eyebrow reveal" data-i18n="ach.eyebrow">Logros</span>
+        <h2 class="reveal reveal-delay-1" data-i18n="ach.h2">Resultados que<br>hablan por sí solos</h2>
+
+        <div class="achievements-grid">
+          <div class="achievement-card card reveal reveal-delay-1">
+            <span class="achievement-card__num">3</span>
+            <h4 data-i18n="ach.a1title">Títulos como Director Técnico</h4>
+            <p data-i18n="ach.a1text">Incluyendo liga regional, copa provincial y supercopa. Logrados con diferentes clubes entre 2019 y 2024.</p>
+            <span class="tag">2019 – 2024</span>
+          </div>
+          <div class="achievement-card card reveal reveal-delay-2">
+            <span class="achievement-card__num">1</span>
+            <h4 data-i18n="ach.a2title">Ascenso de Categoría</h4>
+            <p data-i18n="ach.a2text">Ascenso histórico a Segunda División con Club A en la temporada 2019–20, en un proyecto construido desde cero.</p>
+            <span class="tag">2020</span>
+          </div>
+          <div class="achievement-card card reveal reveal-delay-3">
+            <span class="achievement-card__icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 3 21 3 21 8"/><line x1="4" y1="20" x2="21" y2="3"/><polyline points="21 16 21 21 16 21"/><line x1="15" y1="15" x2="21" y2="21"/></svg>
+            </span>
+            <h4 data-i18n="ach.a3title">Semifinalista Copa Nacional</h4>
+            <p data-i18n="ach.a3text">Con Equipo C en 2023, eliminando a equipos de categoría superior y alcanzando las semifinales de la Copa Nacional.</p>
+            <span class="tag">2023</span>
+          </div>
+          <div class="achievement-card card reveal reveal-delay-1">
+            <span class="achievement-card__icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+            </span>
+            <h4 data-i18n="ach.a4title">Licencia UEFA Pro</h4>
+            <p data-i18n="ach.a4text">Máxima titulación europea para entrenadores. Formación continua en táctica avanzada, liderazgo y gestión deportiva.</p>
+            <span class="tag" data-i18n="ach.uefa">UEFA Pro</span>
+          </div>
+          <div class="achievement-card card reveal reveal-delay-2">
+            <span class="achievement-card__num">68<small>%</small></span>
+            <h4 data-i18n="ach.a5title">Porcentaje de Victorias</h4>
+            <p data-i18n="ach.a5text">Estadística acumulada a lo largo de toda su carrera como entrenador principal y director técnico profesional.</p>
+            <span class="tag" data-i18n="ach.career">Carrera Total</span>
+          </div>
+          <div class="achievement-card card reveal reveal-delay-3">
+            <span class="achievement-card__icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            </span>
+            <h4 data-i18n="ach.a6title">+42 Jugadores Formados</h4>
+            <p data-i18n="ach.a6text">Futbolistas que han dado el salto a categorías superiores o a selecciones nacionales bajo su dirección técnica.</p>
+            <span class="tag" data-i18n="ach.development">Desarrollo</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Stats ticker -->
+      <div class="ticker-wrap" aria-hidden="true">
+        <div class="ticker-track">
+          <span class="ticker-item">68% <em data-i18n="ticker.wins">VICTORIAS</em></span>
+          <span class="ticker-sep">◆</span>
+          <span class="ticker-item">3 <em data-i18n="ticker.titles">TÍTULOS</em></span>
+          <span class="ticker-sep">◆</span>
+          <span class="ticker-item">+42 <em data-i18n="ticker.players">JUGADORES FORMADOS</em></span>
+          <span class="ticker-sep">◆</span>
+          <span class="ticker-item">4 <em data-i18n="ticker.clubs">CLUBES DIRIGIDOS</em></span>
+          <span class="ticker-sep">◆</span>
+          <span class="ticker-item">+294 <em data-i18n="ticker.matches">PARTIDOS</em></span>
+          <span class="ticker-sep">◆</span>
+          <span class="ticker-item">1 <em data-i18n="ticker.promotion">ASCENSO</em></span>
+          <span class="ticker-sep">◆</span>
+          <!-- Duplicate for seamless loop -->
+          <span class="ticker-item">68% <em data-i18n="ticker.wins">VICTORIAS</em></span>
+          <span class="ticker-sep">◆</span>
+          <span class="ticker-item">3 <em data-i18n="ticker.titles">TÍTULOS</em></span>
+          <span class="ticker-sep">◆</span>
+          <span class="ticker-item">+42 <em data-i18n="ticker.players">JUGADORES FORMADOS</em></span>
+          <span class="ticker-sep">◆</span>
+          <span class="ticker-item">4 <em data-i18n="ticker.clubs">CLUBES DIRIGIDOS</em></span>
+          <span class="ticker-sep">◆</span>
+          <span class="ticker-item">+294 <em data-i18n="ticker.matches">PARTIDOS</em></span>
+          <span class="ticker-sep">◆</span>
+          <span class="ticker-item">1 <em data-i18n="ticker.promotion">ASCENSO</em></span>
+          <span class="ticker-sep">◆</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════════
+         SECTION 6: GALERÍA
+    ═══════════════════════════════════════════════════════════ -->
+    <section id="staff" class="section section--alt">
+      <div class="container">
+        <span class="section-eyebrow reveal" data-i18n="gallery.eyebrow">Galería</span>
+        <h2 class="reveal reveal-delay-1" data-i18n="gallery.h2">Momentos<br>en el campo</h2>
+      </div>
+
+      <!-- Carrusel horizontal automático -->
+      <div class="gallery-track-wrapper">
+        <div class="gallery-track" id="gallery-track">
+          <div class="gallery-item"><img src="assets/images/galeria-1.jpg" alt="Galería 1" loading="lazy"></div>
+          <div class="gallery-item"><img src="assets/images/galeria-2.jpg" alt="Galería 2" loading="lazy"></div>
+          <div class="gallery-item"><img src="assets/images/galeria-3.jpg" alt="Galería 3" loading="lazy"></div>
+          <div class="gallery-item"><img src="assets/images/galeria-4.jpg" alt="Galería 4" loading="lazy"></div>
+          <div class="gallery-item"><img src="assets/images/galeria-5.jpg" alt="Galería 5" loading="lazy"></div>
+          <div class="gallery-item"><img src="assets/images/galeria-6.jpeg" alt="Galería 6" loading="lazy"></div>
+          <div class="gallery-item"><img src="assets/images/galeria-7.jpg" alt="Galería 7" loading="lazy"></div>
+          <div class="gallery-item"><img src="assets/images/galeria-8.jpg" alt="Galería 8" loading="lazy"></div>
+          <div class="gallery-item"><img src="assets/images/galeria-9.jpg" alt="Galería 9" loading="lazy"></div>
+          <div class="gallery-item"><img src="assets/images/galeria-10.jpg" alt="Galería 10" loading="lazy"></div>
+          <div class="gallery-item"><img src="assets/images/galeria-11.jpeg" alt="Galería 11" loading="lazy"></div>
+          <div class="gallery-item"><img src="assets/images/galeria-12.jpg" alt="Galería 12" loading="lazy"></div>
+          <div class="gallery-item"><img src="assets/images/galeria-13.jpeg" alt="Galería 13" loading="lazy"></div>
+          <div class="gallery-item"><img src="assets/images/galeria-14.jpeg" alt="Galería 14" loading="lazy"></div>
+          <div class="gallery-item"><img src="assets/images/galeria-15.jpg" alt="Galería 15" loading="lazy"></div>
+          <div class="gallery-item"><img src="assets/images/galeria-16.jpeg" alt="Galería 16" loading="lazy"></div>
+          <!-- Duplicado para loop infinito -->
+          <div class="gallery-item"><img src="assets/images/galeria-1.jpg" alt="Galería 1" loading="lazy"></div>
+          <div class="gallery-item"><img src="assets/images/galeria-2.jpg" alt="Galería 2" loading="lazy"></div>
+          <div class="gallery-item"><img src="assets/images/galeria-3.jpg" alt="Galería 3" loading="lazy"></div>
+          <div class="gallery-item"><img src="assets/images/galeria-4.jpg" alt="Galería 4" loading="lazy"></div>
+          <div class="gallery-item"><img src="assets/images/galeria-5.jpg" alt="Galería 5" loading="lazy"></div>
+          <div class="gallery-item"><img src="assets/images/galeria-6.jpeg" alt="Galería 6" loading="lazy"></div>
+          <div class="gallery-item"><img src="assets/images/galeria-7.jpg" alt="Galería 7" loading="lazy"></div>
+          <div class="gallery-item"><img src="assets/images/galeria-8.jpg" alt="Galería 8" loading="lazy"></div>
+          <div class="gallery-item"><img src="assets/images/galeria-9.jpg" alt="Galería 9" loading="lazy"></div>
+          <div class="gallery-item"><img src="assets/images/galeria-10.jpg" alt="Galería 10" loading="lazy"></div>
+          <div class="gallery-item"><img src="assets/images/galeria-11.jpeg" alt="Galería 11" loading="lazy"></div>
+          <div class="gallery-item"><img src="assets/images/galeria-12.jpg" alt="Galería 12" loading="lazy"></div>
+          <div class="gallery-item"><img src="assets/images/galeria-13.jpeg" alt="Galería 13" loading="lazy"></div>
+          <div class="gallery-item"><img src="assets/images/galeria-14.jpeg" alt="Galería 14" loading="lazy"></div>
+          <div class="gallery-item"><img src="assets/images/galeria-15.jpg" alt="Galería 15" loading="lazy"></div>
+          <div class="gallery-item"><img src="assets/images/galeria-16.jpeg" alt="Galería 16" loading="lazy"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════════
+         SECTION 7: MEDIA
+    ═══════════════════════════════════════════════════════════ -->
+    <section id="media" class="section">
+      <div class="container">
+        <span class="section-eyebrow reveal" data-i18n="media.eyebrow">Prensa & Media</span>
+        <h2 class="reveal reveal-delay-1" data-i18n="media.h2">En los medios</h2>
+
+        <!-- Tab toggle -->
+        <div class="media-tabs reveal reveal-delay-2" role="tablist" aria-label="Categorías de media">
+          <button class="media-tab media-tab--active" id="tab-videos" role="tab" aria-selected="true" aria-controls="panel-videos" data-i18n="media.tabVideos">Vídeos</button>
+          <button class="media-tab" id="tab-press" role="tab" aria-selected="false" aria-controls="panel-press" data-i18n="media.tabPress">Prensa</button>
+        </div>
+
+        <!-- Videos panel -->
+        <div class="media-panel" id="panel-videos" role="tabpanel" aria-labelledby="tab-videos">
+          <div class="media-grid">
+            <div class="media-card media-card--video card reveal reveal-delay-1" data-embed-url="https://www.youtube.com/embed/dQw4w9WgXcQ" role="button" tabindex="0" aria-label="Reproducir vídeo">
+              <div class="media-card__thumbnail-wrap">
+                <div class="media-card__thumb-placeholder">
+                  <svg class="media-card__play" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+                </div>
+                <span class="media-card__duration">8:34</span>
+              </div>
+              <div class="media-card__info">
+                <span class="media-card__source">Canal Técnico</span>
+                <h4 data-i18n="media.v1title">La filosofía de juego de Fernando Rueda</h4>
+              </div>
+            </div>
+            <div class="media-card media-card--video card reveal reveal-delay-2" data-embed-url="https://www.youtube.com/embed/dQw4w9WgXcQ" role="button" tabindex="0" aria-label="Reproducir vídeo">
+              <div class="media-card__thumbnail-wrap">
+                <div class="media-card__thumb-placeholder media-card__thumb-placeholder--2">
+                  <svg class="media-card__play" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+                </div>
+                <span class="media-card__duration">12:10</span>
+              </div>
+              <div class="media-card__info">
+                <span class="media-card__source">Charla Táctica</span>
+                <h4 data-i18n="media.v2title">Análisis táctico: presión alta y transiciones</h4>
+              </div>
+            </div>
+            <div class="media-card media-card--video card reveal reveal-delay-3" data-embed-url="https://www.youtube.com/embed/dQw4w9WgXcQ" role="button" tabindex="0" aria-label="Reproducir vídeo">
+              <div class="media-card__thumbnail-wrap">
+                <div class="media-card__thumb-placeholder media-card__thumb-placeholder--3">
+                  <svg class="media-card__play" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+                </div>
+                <span class="media-card__duration">21:45</span>
+              </div>
+              <div class="media-card__info">
+                <span class="media-card__source">Conferencia Técnica</span>
+                <h4 data-i18n="media.v3title">Gestión del vestuario en el fútbol moderno</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Press panel -->
+        <div class="media-panel media-panel--hidden" id="panel-press" role="tabpanel" aria-labelledby="tab-press">
+          <div class="media-grid">
+            <article class="media-card media-card--article card reveal reveal-delay-1">
+              <div class="media-card__article-header">
+                <span class="media-card__outlet">Diario Deportivo</span>
+                <time class="media-card__date" datetime="2024-03-15" data-i18n="media.a1date">Mar 2024</time>
+              </div>
+              <h4 data-i18n="media.a1title">El técnico que transforma clubes desde adentro</h4>
+              <p data-i18n="media.a1text">Un perfil en profundidad sobre la metodología única de Fernando Rueda y cómo ha cambiado la cultura de tres clubes.</p>
+              <a href="#" class="media-card__link" target="_blank" rel="noopener noreferrer" data-i18n="media.readMore">Leer artículo →</a>
+            </article>
+            <article class="media-card media-card--article card reveal reveal-delay-2">
+              <div class="media-card__article-header">
+                <span class="media-card__outlet">Revista Táctica</span>
+                <time class="media-card__date" datetime="2024-01-20" data-i18n="media.a2date">Ene 2024</time>
+              </div>
+              <h4 data-i18n="media.a2title">Perfil táctico: el modelo de juego de Fernando Rueda</h4>
+              <p data-i18n="media.a2text">Análisis detallado de los sistemas tácticos preferidos por el técnico y la evolución de su propuesta de juego.</p>
+              <a href="#" class="media-card__link" target="_blank" rel="noopener noreferrer" data-i18n="media.readMore">Leer artículo →</a>
+            </article>
+            <article class="media-card media-card--article card reveal reveal-delay-3">
+              <div class="media-card__article-header">
+                <span class="media-card__outlet">El Mundo del Fútbol</span>
+                <time class="media-card__date" datetime="2023-10-05" data-i18n="media.a3date">Oct 2023</time>
+              </div>
+              <h4 data-i18n="media.a3title">Semifinalistas: cómo Rueda llevó al Equipo C al límite</h4>
+              <p data-i18n="media.a3text">Crónica de la excepcional temporada 2022-23 que llevó al Equipo C hasta las semifinales de la Copa Nacional.</p>
+              <a href="#" class="media-card__link" target="_blank" rel="noopener noreferrer" data-i18n="media.readMore">Leer artículo →</a>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════════
+         SECTION 8: CONTACT + FOOTER
+    ═══════════════════════════════════════════════════════════ -->
+    <section id="contact" class="section section--alt">
+      <div class="container">
+        <div class="contact__grid">
+          <!-- Left: info -->
+          <div class="contact__info">
+            <span class="section-eyebrow reveal" data-i18n="contact.eyebrow">Contacto</span>
+            <h2 class="reveal reveal-delay-1" data-i18n="contact.h2">¿Hablamos?</h2>
+            <p class="body-lg reveal reveal-delay-2" data-i18n="contact.intro">
+              Disponible para proyectos como Director Técnico, consultoría futbolística y colaboraciones con clubes, selecciones o medios especializados.
+            </p>
+
+            <div class="contact__details reveal reveal-delay-3">
+              <a href="mailto:contacto@fernandorueda.com" class="contact__detail-item">
+                <svg class="contact__detail-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                <span>contacto@fernandorueda.com</span>
+              </a>
+              <div class="contact__detail-item">
+                <svg class="contact__detail-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                <span data-i18n="contact.location">Disponible para proyectos nacionales e internacionales</span>
+              </div>
+              <a href="#" class="contact__detail-item" target="_blank" rel="noopener noreferrer">
+                <svg class="contact__detail-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                <span>LinkedIn · Fernando Rueda</span>
+              </a>
+            </div>
+
+          </div>
+
+          <!-- Right: form -->
+          <div class="contact__form-wrap reveal-right">
+            <form class="contact__form" id="contact-form" action="mailto:contacto@fernandorueda.com" method="post" enctype="text/plain">
+              <div class="form-field">
+                <label for="name" data-i18n="form.name">Nombre completo</label>
+                <input type="text" id="name" name="name" required autocomplete="name" placeholder="Tu nombre">
+              </div>
+              <div class="form-field">
+                <label for="organisation" data-i18n="form.org">Organización / Club</label>
+                <input type="text" id="organisation" name="organisation" placeholder="Club Deportivo">
+              </div>
+              <div class="form-field">
+                <label for="purpose" data-i18n="form.purpose">Motivo de contacto</label>
+                <select id="purpose" name="purpose">
+                  <option value="" disabled selected data-i18n="form.select">Selecciona una opción</option>
+                  <option value="club" data-i18n="form.opt1">Oferta de Club</option>
+                  <option value="press" data-i18n="form.opt2">Prensa / Medios</option>
+                  <option value="sponsor" data-i18n="form.opt3">Patrocinio</option>
+                  <option value="consulting" data-i18n="form.opt4">Consultoría</option>
+                  <option value="other" data-i18n="form.opt5">Otro</option>
+                </select>
+              </div>
+              <div class="form-field">
+                <label for="email" data-i18n="form.email">Email</label>
+                <input type="email" id="email" name="email" required autocomplete="email" placeholder="tu@email.com">
+              </div>
+              <div class="form-field">
+                <label for="message" data-i18n="form.message">Mensaje</label>
+                <textarea id="message" name="message" rows="5" required placeholder="Escribe tu mensaje..."></textarea>
+              </div>
+              <button type="submit" class="btn-primary btn--full" data-i18n="form.submit">Enviar Mensaje</button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer strip -->
+      <footer class="site-footer">
+        <div class="container">
+          <div class="site-footer__inner">
+            <p class="site-footer__copy">
+              &copy; <span id="footer-year">2025</span> Fernando Rueda.
+              <span data-i18n="footer.rights">Todos los derechos reservados.</span>
+            </p>
+            <div class="site-footer__socials">
+              <a href="#" class="footer-social" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+              </a>
+              <a href="#" class="footer-social" aria-label="Twitter / X" target="_blank" rel="noopener noreferrer">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4l11.733 16H20L8.267 4z"/><path d="M4 20l6.768-6.768M15.232 9.232L20 4"/></svg>
+              </a>
+              <a href="#" class="footer-social" aria-label="YouTube" target="_blank" rel="noopener noreferrer">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46a2.78 2.78 0 0 0-1.95 1.96A29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58A2.78 2.78 0 0 0 3.41 19.6C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.95A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </section>
+
+  </main>
+
+  <!-- JavaScript (ES6 modules — requires local server) -->
+  <script type="module" src="assets/js/main.js"></script>
+</body>
+</html>
