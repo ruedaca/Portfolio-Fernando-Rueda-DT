@@ -30,12 +30,10 @@
   display: flex;
   gap: 16px;
   width: max-content;
-  animation: gallery-scroll 70s linear infinite;
+  animation: gallery-scroll 110s linear infinite;
 }
 
-.gallery-track:hover {
-  animation-play-state: paused;
-}
+/* velocidad controlada por JS */
 
 @keyframes gallery-scroll {
   0%   { transform: translateX(0); }

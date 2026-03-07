@@ -15,6 +15,7 @@ import { initParallax }   from './parallax.js';
 import { initSlideshow }  from './slideshow.js';
 import { initTimeline }   from './timeline.js';
 import { initMedia }      from './media.js';
+import { initGallery }    from './gallery.js';
 
 document.addEventListener('DOMContentLoaded', () => {
   // Language must initialise first (sets text content)
@@ -37,4 +38,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Media tabs + lazy video embeds
   initMedia();
+
+  // Galería horizontal — control de velocidad por arrastre
+  initGallery();
 });
