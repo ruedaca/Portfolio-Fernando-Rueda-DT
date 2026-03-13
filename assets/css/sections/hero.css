@@ -44,14 +44,8 @@
   background-size: cover;
 }
 
-/* Foto 2: anclada a la derecha, cubre todo */
+/* Foto 2 (hero-bg-3): alineada arriba, cubre todo */
 .hero__slide:nth-child(2) {
-  background-position: right center;
-  background-size: cover;
-}
-
-/* Foto 3: alineada arriba, cubre todo */
-.hero__slide:nth-child(3) {
   background-position: center top;
   background-size: cover;
 }
@@ -117,18 +111,28 @@
 /* ── Decorative corner accent ───────────────────────────────── */
 
 #hero::before {
-  content: '';
+  content: "";
   position: absolute;
-  top: 0;
-  right: 0;
-  width: 40vw;
-  height: 40vw;
-  max-width: 600px;
-  max-height: 600px;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(8,10,15,0.45) 0%,
+    rgba(8,10,15,0.30) 40%,
+    rgba(8,10,15,0.12) 65%,
+    rgba(8,10,15,0.02) 85%
+  );
+  z-index: 1;
+  pointer-events: none;
+}
+
+#hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
   background: radial-gradient(
-    ellipse at top right,
-    rgba(201, 168, 76, 0.06) 0%,
-    transparent 65%
+    ellipse 60% 30% at 100% 0%,
+    rgba(8,10,15,0.55) 0%,
+    transparent 70%
   );
   z-index: 1;
   pointer-events: none;
