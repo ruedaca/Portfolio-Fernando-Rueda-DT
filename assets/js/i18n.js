@@ -16,8 +16,8 @@ const translations = {
     // Hero
     'hero.eyebrow':     'Director Técnico · Licencia UEFA Pro',
     'hero.firstName':   'Fernando',
-    'hero.lastName':    'Rueda García',
-    'hero.tagline':     '"El fútbol se gana con orden, talento e identidad"',
+    'hero.lastName':    'Rueda',
+    'hero.tagline':     'Entrenador de fútbol',
     'hero.cta1':        'Trabajar Juntos',
     'hero.cta2':        'Ver Trayectoria',
 
@@ -170,10 +170,10 @@ const translations = {
     'nav.contact':      'Contact',
 
     // Hero
-    'hero.eyebrow':     'Technical Director · UEFA Pro Licence',
+    'hero.eyebrow':     'Football Coach',
     'hero.firstName':   'Fernando',
-    'hero.lastName':    'Rueda García',
-    'hero.tagline':     '"Football is won with structure, talent and identity"',
+    'hero.lastName':    'Rueda',
+    'hero.tagline':     'Football Coach',
     'hero.cta1':        'Work Together',
     'hero.cta2':        'View Career',
 

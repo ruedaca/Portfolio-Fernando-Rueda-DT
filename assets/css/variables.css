@@ -16,11 +16,11 @@
   --color-text-secondary: rgba(240, 237, 232, 0.60);
   --color-text-muted:     rgba(240, 237, 232, 0.35);
 
-  /* ── ACCENT (Blue) ───────────────────────────────────────── */
-  --color-accent:         #2F6BFF;
-  --color-accent-light:   #5C8FFF;
-  --color-accent-dim:     rgba(47, 107, 255, 0.12);
-  --color-accent-border:  rgba(47, 107, 255, 0.30);
+  /* ── ACCENT (Gold / Amber) ───────────────────────────────── */
+  --color-accent:         #C9A84C;
+  --color-accent-light:   #E8C97A;
+  --color-accent-dim:     rgba(201, 168, 76, 0.12);
+  --color-accent-border:  rgba(201, 168, 76, 0.30);
 
   /* ── BORDERS & DIVIDERS ──────────────────────────────────── */
   --color-border:         rgba(240, 237, 232, 0.08);
@@ -88,7 +88,7 @@
 
   /* ── SHADOWS ─────────────────────────────────────────────── */
   --shadow-card:  0 4px 32px rgba(0, 0, 0, 0.40);
-  --shadow-glow:  0 0 48px rgba(47, 107, 255, 0.12);
+  --shadow-glow:  0 0 48px rgba(201, 168, 76, 0.12);
   --shadow-nav:   0 1px 0 rgba(240, 237, 232, 0.06);
 
   /* ── TRANSITIONS ─────────────────────────────────────────── */

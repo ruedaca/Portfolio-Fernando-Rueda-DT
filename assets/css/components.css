@@ -207,7 +207,7 @@
 
 .lang-btn:hover {
   color: var(--color-text-primary);
-  border-color: rgba(59, 130, 246, 0.30);
+  border-color: var(--color-accent-border);
 }
 
 .lang-btn__sep {
@@ -215,7 +215,7 @@
 }
 
 .lang-btn__current {
-  color: #3B82F6;
+  color: var(--color-accent);
 }
 
 /* ── Hamburger ──────────────────────────────────────────────── */
