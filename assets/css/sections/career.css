@@ -2,6 +2,12 @@
    SECTION: CAREER / TRAJECTORY
    ══════════════════════════════════════════════════════════════ */
 
+/* ── Section title ──────────────────────────────────────────── */
+
+#career h2 {
+  font-size: clamp(22px, 2.6vw, 40px);
+}
+
 /* ── Timeline track (horizontal) ───────────────────────────── */
 
 .timeline-track {
@@ -62,6 +68,29 @@
   background: var(--color-accent);
   color: #0A0B0D;
   border-color: var(--color-accent);
+}
+
+/* Club badge images */
+.timeline-node__badge img,
+.career-detail__badge img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  padding: 6px;
+  border-radius: 50%;
+}
+
+/* Ajuste específico Chicago */
+[data-club-id="club-1"] .timeline-node__badge img,
+[data-club-id="club-1"] .career-detail__badge img {
+  padding: 2px;
+  object-position: 58% 58%;
+}
+
+/* Ajuste específico Comunicaciones */
+[data-club-id="club-3"] .timeline-node__badge img,
+[data-club-id="club-3"] .career-detail__badge img {
+  object-position: 75% -100%;
 }
 
 /* Club badge circle */
@@ -172,6 +201,58 @@
   padding: var(--space-4) var(--space-6);
   border-left: 2px solid var(--color-accent);
   margin-top: var(--space-4);
+  line-height: 2;
+}
+
+.career-year {
+  font-weight: 600;
+}
+
+/* Two-column timeline grid (used in Villarreal detail) */
+.career-timeline-grid {
+  padding: var(--space-4) var(--space-6);
+  border-left: 2px solid var(--color-accent);
+  margin-top: var(--space-4);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-2) var(--space-6);
+}
+
+.career-timeline-item {
+  font-family: var(--font-body);
+  font-size: var(--text-body);
+  color: var(--color-text-secondary);
+}
+
+.career-timeline-item--full {
+  grid-column: span 2;
+}
+
+.career-detail__list {
+  list-style: none;
+  padding: var(--space-4) var(--space-6);
+  border-left: 2px solid var(--color-accent);
+  margin-top: var(--space-4);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.career-detail__list li {
+  font-family: var(--font-body);
+  font-size: var(--text-body);
+  color: var(--color-text-secondary);
+  padding-left: var(--space-3);
+  position: relative;
+}
+
+.career-detail__list li::before {
+  content: '★';
+  color: var(--color-accent);
+  position: absolute;
+  left: -var(--space-3);
+  font-size: 10px;
+  top: 3px;
 }
 
 .career-detail__stats {
