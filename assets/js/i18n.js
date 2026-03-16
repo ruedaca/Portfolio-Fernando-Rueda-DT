@@ -16,8 +16,8 @@ const translations = {
     // Hero
     'hero.eyebrow':     'Director Técnico · Licencia UEFA Pro',
     'hero.firstName':   'Fernando',
-    'hero.lastName':    'Rueda',
-    'hero.tagline':     'Entrenador de fútbol',
+    'hero.lastName':    'Rueda García',
+    'hero.tagline':     'Construyo equipos que entienden el juego, dominan el partido y compiten con una identidad clara.',
     'hero.cta1':        'Trabajar Juntos',
     'hero.cta2':        'Ver Trayectoria',
 
@@ -172,8 +172,8 @@ const translations = {
     // Hero
     'hero.eyebrow':     'Football Coach',
     'hero.firstName':   'Fernando',
-    'hero.lastName':    'Rueda',
-    'hero.tagline':     'Football Coach',
+    'hero.lastName':    'Rueda García',
+    'hero.tagline':     'I build teams that understand the game, dominate the match and compete with a clear identity.',
     'hero.cta1':        'Work Together',
     'hero.cta2':        'View Career',
 
