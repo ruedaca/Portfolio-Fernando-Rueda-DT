@@ -24,9 +24,10 @@ const translations = {
     // About
     'about.eyebrow':    'Perfil',
     'about.h2':         'Una carrera construida\nsobre convicciones',
-    'about.bio1':       'Fernando Rueda es un director técnico con más de diez años de experiencia en el fútbol profesional, habiendo dirigido clubes en distintas categorías del fútbol español e internacional. Su modelo de juego combina presión alta, dominio del balón y una identidad colectiva fuerte.',
-    'about.bio2':       'Formado con Licencia UEFA Pro, Rueda ha desarrollado una metodología propia que integra el análisis de datos, la psicología del rendimiento y la gestión del vestuario como pilares de su trabajo diario. Cada proyecto es una oportunidad para dejar huella táctica y humana.',
-    'about.bio3':       'Su filosofía parte de una premisa clara: el colectivo supera al individuo, y la identidad del equipo es el activo más valioso que un entrenador puede construir.',
+    'about.bio1':       'Soy un entrenador con <span class="hl">más de una década de experiencia</span> en el fútbol, habiendo trabajado en distintos contextos competitivos del fútbol profesional <span class="hl">argentino y español</span>. Mi trayectoria se ha construido sobre una visión clara del juego: equipos organizados, competitivos y con una <span class="hl">identidad reconocible</span>.',
+    'about.bio2':       'Formado con <span class="hl">Licencia UEFA A y Conmebol A</span>, he desarrollado un modelo de trabajo basado en el <span class="hl">juego de posición</span>, la presión tras pérdida y el dominio del balón, con el objetivo de que mis equipos sean protagonistas, capaces de <span class="hl">controlar el ritmo del partido</span> y competir en cualquier escenario.',
+    'about.bio3':       'Mi metodología integra herramientas de alto rendimiento como el <span class="hl">análisis de datos</span>, el desarrollo técnico-táctico individual, la <span class="hl">psicología aplicada</span> al rendimiento y la gestión del vestuario. Concibo cada proyecto como una oportunidad para construir algo más que resultados: equipos con <span class="hl">mentalidad competitiva</span> y una estructura sólida y sostenible en el tiempo.',
+    'about.bio4':       '<span class="hl">Mi filosofía se resume en una convicción fundamental:</span> el fútbol es un juego colectivo donde la <span class="hl">inteligencia</span>, la <span class="hl">organización</span> y la <span class="hl">identidad</span> del equipo potencian el talento individual.',
     'about.value1':     'Visión Táctica',
     'about.value2':     'Liderazgo',
     'about.value3':     'Identidad de Juego',
@@ -180,9 +181,10 @@ const translations = {
     // About
     'about.eyebrow':    'Profile',
     'about.h2':         'A career built\non convictions',
-    'about.bio1':       'Fernando Rueda is a technical director with over ten years of experience in professional football, having managed clubs across various divisions in Spain and internationally. His playing model combines high pressing, ball possession and a strong collective identity.',
-    'about.bio2':       'Qualified with a UEFA Pro Licence, Rueda has developed a unique methodology that integrates data analysis, performance psychology and dressing room management as the pillars of his daily work. Every project is an opportunity to leave a tactical and human mark.',
-    'about.bio3':       'His philosophy starts from a clear premise: the collective surpasses the individual, and team identity is the most valuable asset a manager can build.',
+    'about.bio1':       'I am a coach with <span class="hl">over a decade of experience</span> in football, having worked in different competitive contexts within professional football in <span class="hl">Argentina and Spain</span>. My career has been built on a clear vision of the game: organised, competitive teams with a <span class="hl">recognisable identity</span>.',
+    'about.bio2':       'Qualified with a <span class="hl">UEFA A Licence and Conmebol A</span>, I have developed a working model based on <span class="hl">positional play</span>, pressing after loss and ball dominance, with the aim of making my teams protagonists — capable of <span class="hl">controlling the rhythm of the match</span> and competing in any scenario.',
+    'about.bio3':       'My methodology integrates high-performance tools such as <span class="hl">data analysis</span>, individual technical-tactical development, <span class="hl">applied psychology</span> and dressing room management. I see each project as an opportunity to build something more than results: teams with <span class="hl">competitive mentality</span> and a solid, sustainable structure over time.',
+    'about.bio4':       '<span class="hl">My philosophy can be summed up in one fundamental conviction:</span> football is a collective game where <span class="hl">intelligence</span>, <span class="hl">organisation</span> and <span class="hl">identity</span> amplify individual talent.',
     'about.value1':     'Tactical Vision',
     'about.value2':     'Leadership',
     'about.value3':     'Playing Identity',
@@ -325,8 +327,9 @@ function applyTranslations(lang) {
   document.querySelectorAll('[data-i18n]').forEach(el => {
     const key = el.dataset.i18n;
     if (t[key] !== undefined) {
-      // If element contains child elements (like spans), update only text nodes
-      if (el.children.length === 0) {
+      if (el.dataset.i18nHtml !== undefined) {
+        el.innerHTML = t[key];
+      } else if (el.children.length === 0) {
         el.textContent = t[key];
       }
       // Special case: handle h2 with <br> — rebuild from text with \n
