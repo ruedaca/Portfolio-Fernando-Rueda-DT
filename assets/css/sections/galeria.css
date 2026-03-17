@@ -8,41 +8,6 @@
   font-size: clamp(22px, 2.6vw, 40px);
 }
 
-/* ── Carousel container + arrows ───────────────────────────── */
-
-.gallery-carousel {
-  position: relative;
-}
-
-.gallery-arrow {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: 10;
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  border: 1px solid var(--color-border);
-  background: rgba(10, 11, 13, 0.80);
-  color: var(--color-text-secondary);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  transition: border-color var(--transition-base), color var(--transition-base),
-              background var(--transition-base);
-  backdrop-filter: blur(6px);
-}
-
-.gallery-arrow:hover {
-  border-color: var(--color-accent-border);
-  color: var(--color-accent);
-  background: rgba(10, 11, 13, 0.95);
-}
-
-.gallery-arrow--prev { left: 16px; }
-.gallery-arrow--next { right: 16px; }
-
 /* ── Wrapper ────────────────────────────────────────────────── */
 
 .gallery-track-wrapper {
