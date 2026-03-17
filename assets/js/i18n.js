@@ -11,6 +11,8 @@ const translations = {
     'nav.achievements': 'Logros',
     'nav.gallery':      'Galería',
     'nav.contact':      'Contacto',
+    'gallery.eyebrow':  'Galería',
+    'gallery.h2':       'Momentos\nen el campo',
 
     // Hero
     'hero.eyebrow':     'Director Técnico · Licencia UEFA Pro',
@@ -129,6 +131,8 @@ const translations = {
     'nav.achievements': 'Achievements',
     'nav.gallery':      'Gallery',
     'nav.contact':      'Contact',
+    'gallery.eyebrow':  'Gallery',
+    'gallery.h2':       'Moments\non the pitch',
 
     // Hero
     'hero.eyebrow':     'Football Coach',
