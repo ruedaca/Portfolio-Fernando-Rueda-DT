@@ -170,7 +170,7 @@ const translations = {
     // Career
     'career.eyebrow':   'Career',
     'career.h2':        'My journey as a coach\nin constant evolution',
-    'career.role1':     'Assistant Coach',
+    'career.role1':     'Coach',
     'career.role2':     'Performance Analyst',
     'career.role3':     'External Analyst',
     'career.role4':     'Assistant Coach',
