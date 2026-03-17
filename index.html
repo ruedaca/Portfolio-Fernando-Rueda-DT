@@ -26,7 +26,7 @@
   <link rel="stylesheet" href="assets/css/sections/career.css">
   <link rel="stylesheet" href="assets/css/sections/philosophy.css">
   <link rel="stylesheet" href="assets/css/sections/achievements.css">
-  <link rel="stylesheet" href="assets/css/sections/staff.css">
+  <link rel="stylesheet" href="assets/css/sections/galeria.css">
   <link rel="stylesheet" href="assets/css/sections/contact.css">
 </head>
 
@@ -57,7 +57,7 @@
           <li><a href="#career" class="nav-link" data-i18n="nav.career">Trayectoria</a></li>
           <li><a href="#philosophy" class="nav-link" data-i18n="nav.philosophy">Filosofía</a></li>
           <li><a href="#achievements" class="nav-link" data-i18n="nav.achievements">Logros</a></li>
-          <li><a href="#staff" class="nav-link" data-i18n="nav.gallery">Galería</a></li>
+          <li><a href="#galeria" class="nav-link" data-i18n="nav.gallery">Galería</a></li>
           <li><a href="#contact" class="nav-link" data-i18n="nav.contact">Contacto</a></li>
         </ul>
 
@@ -85,7 +85,7 @@
         <li><a href="#career" class="mobile-link" data-i18n="nav.career">Trayectoria</a></li>
         <li><a href="#philosophy" class="mobile-link" data-i18n="nav.philosophy">Filosofía</a></li>
         <li><a href="#achievements" class="mobile-link" data-i18n="nav.achievements">Logros</a></li>
-        <li><a href="#staff" class="mobile-link" data-i18n="nav.gallery">Galería</a></li>
+        <li><a href="#galeria" class="mobile-link" data-i18n="nav.gallery">Galería</a></li>
         <li><a href="#contact" class="mobile-link" data-i18n="nav.contact">Contacto</a></li>
       </ul>
     </div>
@@ -502,7 +502,7 @@
     <!-- ═══════════════════════════════════════════════════════════
          SECTION 6: GALERÍA
     ═══════════════════════════════════════════════════════════ -->
-    <section id="staff" class="section section--alt">
+    <section id="galeria" class="section section--alt">
       <div class="container">
         <span class="section-eyebrow reveal" data-i18n="gallery.eyebrow">Galería</span>
         <h2 class="reveal reveal-delay-1" data-i18n="gallery.h2">Momentos<br>en el campo</h2>
@@ -510,42 +510,90 @@
 
 
       <!-- Carrusel horizontal automático -->
+      <div class="gallery-carousel">
+        <button class="gallery-arrow gallery-arrow--prev" id="gallery-prev" aria-label="Anterior">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+        </button>
+        <button class="gallery-arrow gallery-arrow--next" id="gallery-next" aria-label="Siguiente">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+        </button>
       <div class="gallery-track-wrapper">
         <div class="gallery-track" id="gallery-track">
           <div class="gallery-item"><img src="assets/images/galeria-1.jpg" alt="Galería 1" loading="lazy"></div>
           <div class="gallery-item"><img src="assets/images/galeria-2.jpg" alt="Galería 2" loading="lazy"></div>
           <div class="gallery-item"><img src="assets/images/galeria-3.jpg" alt="Galería 3" loading="lazy"></div>
-          <div class="gallery-item"><img src="assets/images/galeria-4.jpg" alt="Galería 4" loading="lazy"></div>
+          <div class="gallery-item"><img src="assets/images/galeria-4.jpeg" alt="Galería 4" loading="lazy"></div>
           <div class="gallery-item"><img src="assets/images/galeria-5.jpg" alt="Galería 5" loading="lazy"></div>
           <div class="gallery-item"><img src="assets/images/galeria-6.jpeg" alt="Galería 6" loading="lazy"></div>
           <div class="gallery-item"><img src="assets/images/galeria-7.jpg" alt="Galería 7" loading="lazy"></div>
           <div class="gallery-item"><img src="assets/images/galeria-8.jpg" alt="Galería 8" loading="lazy"></div>
-          <div class="gallery-item"><img src="assets/images/galeria-9.jpg" alt="Galería 9" loading="lazy"></div>
+          <div class="gallery-item"><img src="assets/images/galeria-9.jpeg" alt="Galería 9" loading="lazy"></div>
           <div class="gallery-item"><img src="assets/images/galeria-10.jpg" alt="Galería 10" loading="lazy"></div>
-          <div class="gallery-item"><img src="assets/images/galeria-11.jpeg" alt="Galería 11" loading="lazy"></div>
-          <div class="gallery-item"><img src="assets/images/galeria-12.jpg" alt="Galería 12" loading="lazy"></div>
+          <div class="gallery-item"><img src="assets/images/galeria-11.jpg" alt="Galería 11" loading="lazy"></div>
+          <div class="gallery-item"><img src="assets/images/galeria-12.jpeg" alt="Galería 12" loading="lazy"></div>
           <div class="gallery-item"><img src="assets/images/galeria-13.jpeg" alt="Galería 13" loading="lazy"></div>
-          <div class="gallery-item"><img src="assets/images/galeria-14.jpeg" alt="Galería 14" loading="lazy"></div>
-          <div class="gallery-item"><img src="assets/images/galeria-15.jpg" alt="Galería 15" loading="lazy"></div>
+          <div class="gallery-item"><img src="assets/images/galeria-14.jpg" alt="Galería 14" loading="lazy"></div>
+          <div class="gallery-item"><img src="assets/images/galeria-15.jpeg" alt="Galería 15" loading="lazy"></div>
           <div class="gallery-item"><img src="assets/images/galeria-16.jpeg" alt="Galería 16" loading="lazy"></div>
+          <div class="gallery-item"><img src="assets/images/galeria-17.jpg" alt="Galería 17" loading="lazy"></div>
+          <div class="gallery-item"><img src="assets/images/galeria-18.jpeg" alt="Galería 18" loading="lazy"></div>
+          <div class="gallery-item"><img src="assets/images/galeria-19.jpg" alt="Galería 19" loading="lazy"></div>
+          <div class="gallery-item"><img src="assets/images/galeria-20.jpeg" alt="Galería 20" loading="lazy"></div>
+          <div class="gallery-item"><img src="assets/images/galeria-21.jpg" alt="Galería 21" loading="lazy"></div>
+          <div class="gallery-item"><img src="assets/images/galeria-22.jpg" alt="Galería 22" loading="lazy"></div>
+          <div class="gallery-item"><img src="assets/images/galeria-23.jpeg" alt="Galería 23" loading="lazy"></div>
+          <div class="gallery-item"><img src="assets/images/galeria-24.jpg" alt="Galería 24" loading="lazy"></div>
+          <div class="gallery-item"><img src="assets/images/galeria-25.jpeg" alt="Galería 25" loading="lazy"></div>
+          <div class="gallery-item"><img src="assets/images/galeria-26.jpg" alt="Galería 26" loading="lazy"></div>
+          <div class="gallery-item"><img src="assets/images/galeria-27.jpg" alt="Galería 27" loading="lazy"></div>
+          <div class="gallery-item"><img src="assets/images/galeria-28.jpg" alt="Galería 28" loading="lazy"></div>
+          <div class="gallery-item"><img src="assets/images/galeria-29.jpeg" alt="Galería 29" loading="lazy"></div>
+          <div class="gallery-item"><img src="assets/images/galeria-30.jpg" alt="Galería 30" loading="lazy"></div>
+          <div class="gallery-item"><img src="assets/images/galeria-31.jpg" alt="Galería 31" loading="lazy"></div>
+          <div class="gallery-item"><img src="assets/images/galeria-32.jpeg" alt="Galería 32" loading="lazy"></div>
+          <div class="gallery-item"><img src="assets/images/galeria-33.jpg" alt="Galería 33" loading="lazy"></div>
+          <div class="gallery-item"><img src="assets/images/galeria-34.jpeg" alt="Galería 34" loading="lazy"></div>
+          <div class="gallery-item"><img src="assets/images/galeria-35.jpg" alt="Galería 35" loading="lazy"></div>
+          <div class="gallery-item"><img src="assets/images/galeria-36.jpg" alt="Galería 36" loading="lazy"></div>
           <!-- Duplicado para loop infinito -->
           <div class="gallery-item"><img src="assets/images/galeria-1.jpg" alt="Galería 1" loading="lazy"></div>
           <div class="gallery-item"><img src="assets/images/galeria-2.jpg" alt="Galería 2" loading="lazy"></div>
           <div class="gallery-item"><img src="assets/images/galeria-3.jpg" alt="Galería 3" loading="lazy"></div>
-          <div class="gallery-item"><img src="assets/images/galeria-4.jpg" alt="Galería 4" loading="lazy"></div>
+          <div class="gallery-item"><img src="assets/images/galeria-4.jpeg" alt="Galería 4" loading="lazy"></div>
           <div class="gallery-item"><img src="assets/images/galeria-5.jpg" alt="Galería 5" loading="lazy"></div>
           <div class="gallery-item"><img src="assets/images/galeria-6.jpeg" alt="Galería 6" loading="lazy"></div>
           <div class="gallery-item"><img src="assets/images/galeria-7.jpg" alt="Galería 7" loading="lazy"></div>
           <div class="gallery-item"><img src="assets/images/galeria-8.jpg" alt="Galería 8" loading="lazy"></div>
-          <div class="gallery-item"><img src="assets/images/galeria-9.jpg" alt="Galería 9" loading="lazy"></div>
+          <div class="gallery-item"><img src="assets/images/galeria-9.jpeg" alt="Galería 9" loading="lazy"></div>
           <div class="gallery-item"><img src="assets/images/galeria-10.jpg" alt="Galería 10" loading="lazy"></div>
-          <div class="gallery-item"><img src="assets/images/galeria-11.jpeg" alt="Galería 11" loading="lazy"></div>
-          <div class="gallery-item"><img src="assets/images/galeria-12.jpg" alt="Galería 12" loading="lazy"></div>
+          <div class="gallery-item"><img src="assets/images/galeria-11.jpg" alt="Galería 11" loading="lazy"></div>
+          <div class="gallery-item"><img src="assets/images/galeria-12.jpeg" alt="Galería 12" loading="lazy"></div>
           <div class="gallery-item"><img src="assets/images/galeria-13.jpeg" alt="Galería 13" loading="lazy"></div>
-          <div class="gallery-item"><img src="assets/images/galeria-14.jpeg" alt="Galería 14" loading="lazy"></div>
-          <div class="gallery-item"><img src="assets/images/galeria-15.jpg" alt="Galería 15" loading="lazy"></div>
+          <div class="gallery-item"><img src="assets/images/galeria-14.jpg" alt="Galería 14" loading="lazy"></div>
+          <div class="gallery-item"><img src="assets/images/galeria-15.jpeg" alt="Galería 15" loading="lazy"></div>
           <div class="gallery-item"><img src="assets/images/galeria-16.jpeg" alt="Galería 16" loading="lazy"></div>
+          <div class="gallery-item"><img src="assets/images/galeria-17.jpg" alt="Galería 17" loading="lazy"></div>
+          <div class="gallery-item"><img src="assets/images/galeria-18.jpeg" alt="Galería 18" loading="lazy"></div>
+          <div class="gallery-item"><img src="assets/images/galeria-19.jpg" alt="Galería 19" loading="lazy"></div>
+          <div class="gallery-item"><img src="assets/images/galeria-20.jpeg" alt="Galería 20" loading="lazy"></div>
+          <div class="gallery-item"><img src="assets/images/galeria-21.jpg" alt="Galería 21" loading="lazy"></div>
+          <div class="gallery-item"><img src="assets/images/galeria-22.jpg" alt="Galería 22" loading="lazy"></div>
+          <div class="gallery-item"><img src="assets/images/galeria-23.jpeg" alt="Galería 23" loading="lazy"></div>
+          <div class="gallery-item"><img src="assets/images/galeria-24.jpg" alt="Galería 24" loading="lazy"></div>
+          <div class="gallery-item"><img src="assets/images/galeria-25.jpeg" alt="Galería 25" loading="lazy"></div>
+          <div class="gallery-item"><img src="assets/images/galeria-26.jpg" alt="Galería 26" loading="lazy"></div>
+          <div class="gallery-item"><img src="assets/images/galeria-27.jpg" alt="Galería 27" loading="lazy"></div>
+          <div class="gallery-item"><img src="assets/images/galeria-28.jpg" alt="Galería 28" loading="lazy"></div>
+          <div class="gallery-item"><img src="assets/images/galeria-29.jpeg" alt="Galería 29" loading="lazy"></div>
+          <div class="gallery-item"><img src="assets/images/galeria-30.jpg" alt="Galería 30" loading="lazy"></div>
+          <div class="gallery-item"><img src="assets/images/galeria-31.jpg" alt="Galería 31" loading="lazy"></div>
+          <div class="gallery-item"><img src="assets/images/galeria-32.jpeg" alt="Galería 32" loading="lazy"></div>
+          <div class="gallery-item"><img src="assets/images/galeria-33.jpg" alt="Galería 33" loading="lazy"></div>
+          <div class="gallery-item"><img src="assets/images/galeria-34.jpeg" alt="Galería 34" loading="lazy"></div>
+          <div class="gallery-item"><img src="assets/images/galeria-35.jpg" alt="Galería 35" loading="lazy"></div>
+          <div class="gallery-item"><img src="assets/images/galeria-36.jpg" alt="Galería 36" loading="lazy"></div>
         </div>
+      </div>
       </div>
     </section>
 

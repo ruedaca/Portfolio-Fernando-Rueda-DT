@@ -10,7 +10,8 @@
       "Bash(cmd /c dir:*)",
       "Bash(wsl ls:*)",
       "Bash(wsl stat:*)",
-      "Bash(wsl du:*)"
+      "Bash(wsl du:*)",
+      "Bash(ls:*)"
     ]
   }
 }

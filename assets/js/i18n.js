@@ -100,23 +100,6 @@ const translations = {
     'ticker.matches':  'PARTIDOS',
     'ticker.promotion':'ASCENSO',
 
-    // Staff
-    'staff.eyebrow': 'Cuerpo Técnico',
-    'staff.h2':      'El equipo\ndetrás del equipo',
-    'staff.intro':   'Un cuerpo técnico de primer nivel es tan importante como los jugadores. Cada miembro aporta una especialización que refuerza el proyecto colectivo.',
-    'staff.r1':      'Asistente Técnico',
-    'staff.r2':      'Preparador Físico',
-    'staff.r3':      'Analista de Vídeo',
-    'staff.r4':      'Prep. de Porteros',
-    'staff.r5':      'Fisioterapeuta',
-    'staff.r6':      'Psicólogo Deportivo',
-    'staff.s1':      'Táctica',
-    'staff.s2':      'Rendimiento',
-    'staff.s3':      'Análisis',
-    'staff.s4':      'Portería',
-    'staff.s5':      'Medicina',
-    'staff.s6':      'Psicología',
-
     // Contact
     'contact.eyebrow':   'Contacto',
     'contact.h2':        '¿Hablamos?',
@@ -234,23 +217,6 @@ const translations = {
     'ticker.clubs':    'CLUBS MANAGED',
     'ticker.matches':  'MATCHES',
     'ticker.promotion':'PROMOTION',
-
-    // Staff
-    'staff.eyebrow': 'Technical Staff',
-    'staff.h2':      'The team\nbehind the team',
-    'staff.intro':   'A top-level coaching staff is as important as the players. Every member brings a specialisation that strengthens the collective project.',
-    'staff.r1':      'Assistant Coach',
-    'staff.r2':      'Fitness Coach',
-    'staff.r3':      'Video Analyst',
-    'staff.r4':      'Goalkeeping Coach',
-    'staff.r5':      'Physiotherapist',
-    'staff.r6':      'Sports Psychologist',
-    'staff.s1':      'Tactics',
-    'staff.s2':      'Performance',
-    'staff.s3':      'Analysis',
-    'staff.s4':      'Goalkeeping',
-    'staff.s5':      'Medicine',
-    'staff.s6':      'Psychology',
 
     // Contact
     'contact.eyebrow':   'Contact',
