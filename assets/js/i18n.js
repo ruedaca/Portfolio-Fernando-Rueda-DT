@@ -71,7 +71,7 @@ const translations = {
     'method.m2title':     'Vídeo Táctica',
     'method.m2text':      'Sesiones de vídeo individuales y colectivas para análisis propio y del rival. Herramienta central del proceso de mejora.',
     'method.m3title':     'Trabajo en Bloque',
-    'method.m3text':      'Entrenamientos diseñados en torno al concepto colectivo. La repetición de automatismos es la base de la consistencia.',
+    'method.m3text':      'Entrenamientos diseñados en torno al concepto colectivo. La repetición de los principios de juego es la base de la consistencia.',
     'method.m4title':     'Desarrollo Individual',
     'method.m4text':      'Planes personalizados de mejora para cada jugador. El crecimiento individual está siempre al servicio del colectivo.',
 
@@ -206,7 +206,7 @@ const translations = {
     'method.m2title':     'Video Analysis',
     'method.m2text':      'Individual and collective video sessions for self-analysis and opponent scouting. A central tool in the improvement process.',
     'method.m3title':     'Collective Training',
-    'method.m3text':      'Sessions designed around collective concepts. Repeating automated patterns is the foundation of consistency.',
+    'method.m3text':      'Sessions designed around collective concepts. Repeating the principles of play is the foundation of consistency.',
     'method.m4title':     'Individual Development',
     'method.m4text':      'Personalised improvement plans for each player. Individual growth is always in service of the collective.',
 
