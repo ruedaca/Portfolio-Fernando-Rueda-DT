@@ -45,6 +45,20 @@ const translations = {
     'career.div1':      '1ª División',
     'career.liga':      'Liga Profesional',
     'career.present':   'Presente',
+    // Template content
+    'career.c1tag1':    'Reserva · Sub 19 · Sub 17 · Sub 15',
+    'career.c1r1':      '★ Segundo Entrenador Reserva (Filial)',
+    'career.c1r2':      '★ Segundo Entrenador Sub 19',
+    'career.c1r3':      '★ Entrenador Sub 17',
+    'career.c1r4':      '★ Entrenador Sub 15',
+    'career.c2ach':     '★ Analista de rendimiento en el primer equipo 1ª División',
+    'career.c3ach':     '★ Análisis externo aplicado al primer equipo',
+    'career.c4r1':      '★ Segundo Entrenador Cadete A (Sub 16)',
+    'career.c4r2':      '★ Segundo Entrenador Infantil A (Sub 14)',
+    'career.c5r1':      '★ Entrenador Juvenil C (Sub 19) · Entrenador Cadete A Roda (Sub 16)',
+    'career.c5r2':      '★ Entrenador Infantil A Roda (Sub 14)',
+    'career.c5r3':      '★ Asistente Juvenil A (Sub 19)',
+    'career.c5r4':      '★ Entrenador Alevín A y Benjamín A (Sub 12 y Sub 10)',
     'career.ach1':      '★ Ascenso histórico a Segunda División · Temporada 2019–20',
     'career.ach2':      '★ Temporada histórica · Clasificación top 6 · Copa: Cuartos de Final',
     'career.ach3':      '★ Semifinalista Copa Nacional · 3º en Liga Profesional 2022–23',
@@ -165,6 +179,20 @@ const translations = {
     'career.div1':      '1st Division',
     'career.liga':      'Professional League',
     'career.present':   'Present',
+    // Template content
+    'career.c1tag1':    'Reserve · U19 · U17 · U15',
+    'career.c1r1':      '★ Assistant Coach Reserve (B Team)',
+    'career.c1r2':      '★ Assistant Coach U19',
+    'career.c1r3':      '★ Coach U17',
+    'career.c1r4':      '★ Coach U15',
+    'career.c2ach':     '★ Performance Analyst — First Team 1st Division',
+    'career.c3ach':     '★ External analysis applied to the first team',
+    'career.c4r1':      '★ Assistant Coach U16',
+    'career.c4r2':      '★ Assistant Coach U14',
+    'career.c5r1':      '★ Coach U19 · Coach U16 Roda',
+    'career.c5r2':      '★ Coach U14 Roda',
+    'career.c5r3':      '★ Assistant U19',
+    'career.c5r4':      '★ Coach U12 and U10',
     'career.ach1':      '★ Historic promotion to Second Division · Season 2019–20',
     'career.ach2':      '★ Historic season · Top 6 finish · Cup: Quarter-Finals',
     'career.ach3':      '★ National Cup Semi-Finals · 3rd in Professional League 2022–23',
@@ -246,7 +274,9 @@ const translations = {
 
 let currentLang = localStorage.getItem('lang') || 'es';
 
-function applyTranslations(lang) {
+export function getCurrentLang() { return currentLang; }
+
+export function applyTranslations(lang) {
   const t = translations[lang];
   if (!t) return;
 

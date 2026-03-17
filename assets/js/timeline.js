@@ -2,12 +2,16 @@
    TIMELINE · Career timeline interactivity
    ══════════════════════════════════════════════════════════════ */
 
+import { applyTranslations, getCurrentLang } from './i18n.js';
+
 export function initTimeline() {
   const nodes       = document.querySelectorAll('.timeline-node');
   const detailPanel = document.getElementById('timeline-detail');
   const dataWrap    = document.querySelector('.timeline-data');
 
   if (!nodes.length || !detailPanel || !dataWrap) return;
+
+  let activeNode = null;
 
   function activateNode(node) {
     // Deactivate all
@@ -19,6 +23,7 @@ export function initTimeline() {
     // Activate selected
     node.classList.add('timeline-node--active');
     node.setAttribute('aria-pressed', 'true');
+    activeNode = node;
 
     // Find corresponding template
     const clubId   = node.dataset.clubId;
@@ -31,7 +36,10 @@ export function initTimeline() {
     detailPanel.innerHTML = '';
     detailPanel.appendChild(content);
     detailPanel.classList.add('detail--visible');
-    detailPanel.classList.add('in-view'); // trigger reveal if not already shown
+    detailPanel.classList.add('in-view');
+
+    // Apply current language to injected content
+    applyTranslations(getCurrentLang());
   }
 
   // Attach click listeners
@@ -45,6 +53,13 @@ export function initTimeline() {
         activateNode(node);
       }
     });
+  });
+
+  // Re-render active node on language change
+  document.getElementById('lang-btn')?.addEventListener('click', () => {
+    if (activeNode) {
+      setTimeout(() => activateNode(activeNode), 0);
+    }
   });
 
   // Activate first node on load
