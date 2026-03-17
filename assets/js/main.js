@@ -14,7 +14,6 @@ import { initAnimations } from './animations.js';
 import { initParallax }   from './parallax.js';
 import { initSlideshow }  from './slideshow.js';
 import { initTimeline }   from './timeline.js';
-import { initMedia }      from './media.js';
 import { initGallery }    from './gallery.js';
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -35,9 +34,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Career timeline (click nodes, detail panel)
   initTimeline();
-
-  // Media tabs + lazy video embeds
-  initMedia();
 
   // Galería horizontal — control de velocidad por arrastre
   initGallery();

@@ -10,7 +10,6 @@ const translations = {
     'nav.philosophy':   'Filosofía',
     'nav.achievements': 'Logros',
     'nav.gallery':      'Galería',
-    'nav.media':        'Prensa',
     'nav.contact':      'Contacto',
 
     // Hero
@@ -24,9 +23,9 @@ const translations = {
     // About
     'about.eyebrow':    'Perfil',
     'about.h2':         'Una carrera construida\nsobre convicciones',
-    'about.bio1':       'Soy un entrenador con <span class="hl">más de una década de experiencia</span> en el fútbol, habiendo trabajado en distintos contextos competitivos del fútbol profesional <span class="hl">argentino y español</span>. Mi trayectoria se ha construido sobre una visión clara del juego: equipos organizados, competitivos y con una <span class="hl">identidad reconocible</span>.',
+    'about.bio1':       'Soy un entrenador con <span class="hl">más de una década de experiencia</span>, habiendo trabajado en distintos contextos competitivos del fútbol profesional <span class="hl">argentino y español</span>. Mi trayectoria se ha construido sobre una visión clara del juego: equipos organizados, competitivos y con una <span class="hl">identidad reconocible</span>.',
     'about.bio2':       'Formado con <span class="hl">Licencia UEFA A y Conmebol A</span>, he desarrollado un modelo de trabajo basado en el <span class="hl">juego de posición</span>, la presión tras pérdida y el dominio del balón, con el objetivo de que mis equipos sean protagonistas, capaces de <span class="hl">controlar el ritmo del partido</span> y competir en cualquier escenario.',
-    'about.bio3':       'Mi metodología integra herramientas de alto rendimiento como el <span class="hl">análisis de datos</span>, el desarrollo técnico-táctico individual, la <span class="hl">psicología aplicada</span> al rendimiento y la gestión del vestuario. Concibo cada proyecto como una oportunidad para construir algo más que resultados: equipos con <span class="hl">mentalidad competitiva</span> y una estructura sólida y sostenible en el tiempo.',
+    'about.bio3':       'Mi metodología integra herramientas de alto rendimiento como el <span class="hl">análisis de datos</span>, el desarrollo técnico-táctico individual, la <span class="hl">psicología aplicada</span> al rendimiento y la gestión del vestuario. Concibo cada proyecto como una oportunidad para construir algo más que resultados: equipos con <span class="hl">mentalidad competitiva</span> con una estructura sólida y sostenible en el tiempo.',
     'about.bio4':       '<span class="hl">Mi filosofía se resume en una convicción fundamental:</span> el fútbol es un juego colectivo donde la <span class="hl">inteligencia</span>, la <span class="hl">organización</span> y la <span class="hl">identidad</span> del equipo potencian el talento individual.',
     'about.value1':     'Visión Táctica',
     'about.value2':     'Liderazgo',
@@ -118,25 +117,6 @@ const translations = {
     'staff.s5':      'Medicina',
     'staff.s6':      'Psicología',
 
-    // Media
-    'media.eyebrow':   'Prensa & Media',
-    'media.h2':        'En los medios',
-    'media.tabVideos': 'Vídeos',
-    'media.tabPress':  'Prensa',
-    'media.v1title':   'La filosofía de juego de Fernando Rueda',
-    'media.v2title':   'Análisis táctico: presión alta y transiciones',
-    'media.v3title':   'Gestión del vestuario en el fútbol moderno',
-    'media.a1date':    'Mar 2024',
-    'media.a1title':   'El técnico que transforma clubes desde adentro',
-    'media.a1text':    'Un perfil en profundidad sobre la metodología única de Fernando Rueda y cómo ha cambiado la cultura de tres clubes.',
-    'media.a2date':    'Ene 2024',
-    'media.a2title':   'Perfil táctico: el modelo de juego de Fernando Rueda',
-    'media.a2text':    'Análisis detallado de los sistemas tácticos preferidos por el técnico y la evolución de su propuesta de juego.',
-    'media.a3date':    'Oct 2023',
-    'media.a3title':   'Semifinalistas: cómo Rueda llevó al Equipo C al límite',
-    'media.a3text':    'Crónica de la excepcional temporada 2022-23 que llevó al Equipo C hasta las semifinales de la Copa Nacional.',
-    'media.readMore':  'Leer artículo →',
-
     // Contact
     'contact.eyebrow':   'Contacto',
     'contact.h2':        '¿Hablamos?',
@@ -165,7 +145,6 @@ const translations = {
     'nav.philosophy':   'Philosophy',
     'nav.achievements': 'Achievements',
     'nav.gallery':      'Gallery',
-    'nav.media':        'Media',
     'nav.contact':      'Contact',
 
     // Hero
@@ -272,25 +251,6 @@ const translations = {
     'staff.s4':      'Goalkeeping',
     'staff.s5':      'Medicine',
     'staff.s6':      'Psychology',
-
-    // Media
-    'media.eyebrow':   'Press & Media',
-    'media.h2':        'In the media',
-    'media.tabVideos': 'Videos',
-    'media.tabPress':  'Press',
-    'media.v1title':   'Fernando Rueda\'s football philosophy',
-    'media.v2title':   'Tactical analysis: high press and transitions',
-    'media.v3title':   'Dressing room management in modern football',
-    'media.a1date':    'Mar 2024',
-    'media.a1title':   'The coach who transforms clubs from within',
-    'media.a1text':    'An in-depth profile on Fernando Rueda\'s unique methodology and how he has changed the culture of three clubs.',
-    'media.a2date':    'Jan 2024',
-    'media.a2title':   'Tactical profile: Fernando Rueda\'s playing model',
-    'media.a2text':    'Detailed analysis of the coach\'s preferred tactical systems and the evolution of his playing philosophy.',
-    'media.a3date':    'Oct 2023',
-    'media.a3title':   'Semi-finalists: how Rueda took Team C to the brink',
-    'media.a3text':    'A chronicle of the exceptional 2022-23 season that took Team C to the National Cup semi-finals.',
-    'media.readMore':  'Read article →',
 
     // Contact
     'contact.eyebrow':   'Contact',

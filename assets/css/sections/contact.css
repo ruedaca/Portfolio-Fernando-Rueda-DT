@@ -84,10 +84,22 @@ a.contact__detail-item:hover .contact__detail-icon {
   color: #4ade80;
 }
 
+/* ── Form fields ────────────────────────────────────────────── */
+
+#contact .form-field input,
+#contact .form-field select,
+#contact .form-field textarea {
+  background: var(--color-bg-primary);
+}
+
+#contact .form-field select option {
+  background: var(--color-bg-primary);
+}
+
 /* ── Form wrapper ───────────────────────────────────────────── */
 
 .contact__form-wrap {
-  background: var(--color-bg-card);
+  background: var(--color-bg-primary);
   border: 1px solid var(--color-border);
   border-radius: var(--radius-lg);
   padding: var(--space-10);
