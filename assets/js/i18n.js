@@ -103,7 +103,7 @@ const translations = {
     // Contact
     'contact.eyebrow':   'Contacto',
     'contact.h2':        'Contactame',
-    'contact.intro':     'Experiencia en proyectos como entrenador de futbol, consultoría futbolística y colaboraciones con clubes, selecciones o medios especializados.',
+    'contact.intro':     'Experiencia en proyectos como entrenador de fútbol, consultoría futbolística y colaboraciones con clubes, selecciones o medios especializados.',
     'contact.location':  'Disponible para proyectos nacionales e internacionales',
     'contact.available': 'Disponible para nuevos proyectos',
     'form.name':         'Nombre completo',
