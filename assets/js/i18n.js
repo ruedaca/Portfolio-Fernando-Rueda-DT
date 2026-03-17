@@ -102,8 +102,8 @@ const translations = {
 
     // Contact
     'contact.eyebrow':   'Contacto',
-    'contact.h2':        '¿Hablamos?',
-    'contact.intro':     'Disponible para proyectos como Director Técnico, consultoría futbolística y colaboraciones con clubes, selecciones o medios especializados.',
+    'contact.h2':        'Contactame',
+    'contact.intro':     'Experiencia en proyectos como entrenador de futbol, consultoría futbolística y colaboraciones con clubes, selecciones o medios especializados.',
     'contact.location':  'Disponible para proyectos nacionales e internacionales',
     'contact.available': 'Disponible para nuevos proyectos',
     'form.name':         'Nombre completo',
@@ -220,7 +220,7 @@ const translations = {
 
     // Contact
     'contact.eyebrow':   'Contact',
-    'contact.h2':        'Let\'s talk?',
+    'contact.h2':        'Contact me',
     'contact.intro':     'Available for projects as Technical Director, football consultancy and collaborations with clubs, national teams or specialist media.',
     'contact.location':  'Available for national and international projects',
     'contact.available': 'Available for new projects',
