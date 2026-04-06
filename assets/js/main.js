@@ -15,6 +15,7 @@ import { initParallax }   from './parallax.js';
 import { initSlideshow }  from './slideshow.js';
 import { initTimeline }   from './timeline.js';
 import { initGallery }    from './gallery.js';
+import { initContact }    from './contact.js';
 
 document.addEventListener('DOMContentLoaded', () => {
   // Language must initialise first (sets text content)
@@ -37,4 +38,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Galería horizontal — control de velocidad por arrastre
   initGallery();
+
+  // Formulario de contacto — async submit sin redirección
+  initContact();
 });
