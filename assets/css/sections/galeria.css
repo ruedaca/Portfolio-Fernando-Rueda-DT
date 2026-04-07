@@ -55,6 +55,18 @@
   transform: scale(1.03);
 }
 
+/* ── Solo desktop ───────────────────────────────────────────── */
+
+.gallery-item--desktop-only {
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  .gallery-item--desktop-only {
+    display: block;
+  }
+}
+
 /* ── Tablet ─────────────────────────────────────────────────── */
 
 @media (min-width: 600px) {
