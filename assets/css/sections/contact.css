@@ -90,17 +90,17 @@ a.contact__detail-item:hover .contact__detail-icon {
 #contact .form-field input,
 #contact .form-field select,
 #contact .form-field textarea {
-  background: var(--color-bg-primary);
+  background: var(--color-bg-secondary);
 }
 
 #contact .form-field select option {
-  background: var(--color-bg-primary);
+  background: var(--color-bg-secondary);
 }
 
 /* ── Form wrapper ───────────────────────────────────────────── */
 
 .contact__form-wrap {
-  background: var(--color-bg-primary);
+  background: var(--color-bg-secondary);
   border: 1px solid var(--color-border);
   border-radius: var(--radius-lg);
   padding: var(--space-10);
